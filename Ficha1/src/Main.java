@@ -21,7 +21,7 @@ public class Main {
 
     //11:
     private static float averageOfArray(int[] array) {
-
+        return  0.0f;
     }
     private static int maximumOfArray(int[] array) {
         int maximum = array[0];

@@ -46,5 +46,7 @@ public class Main {
 
         int indice = ArrayUtilities.indexOf(array,3);
         System.out.println(indice);
+
+        int value = ArrayUtilities.add(array,8);
     }
 }

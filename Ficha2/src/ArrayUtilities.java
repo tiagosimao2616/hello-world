@@ -66,4 +66,9 @@ public class ArrayUtilities {
         }
         return indice;
     }
+
+    public static int add(int[] array, int value) {
+        int [] array1 = [];
+        return array1
+    }
 }
