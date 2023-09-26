@@ -44,9 +44,13 @@ public class Main {
         boolean rep = ArrayUtilities.containsDuplicates(array);
         System.out.println(rep);
 
-        int indice = ArrayUtilities.indexOf(array,3);
+        int indice = ArrayUtilities.indexOf(array,8);
         System.out.println(indice);
 
-        int value = ArrayUtilities.add(array,8);
+        int[] value = ArrayUtilities.add(array,8);
+        System.out.println(ArrayUtilities.toString(value));
+
+        int[] indice1 = ArrayUtilities.remove(array,11);
+        System.out.println(ArrayUtilities.toString(indice1));
     }
 }

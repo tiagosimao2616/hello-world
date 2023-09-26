@@ -49,8 +49,8 @@ public class ArrayUtilities {
 
     public static boolean containsDuplicates(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length+1; j++) {
-                if (array[i] == array[j] && i != j)
+            for (int j = 0; j < array.length; j++) {
+                if (array[j] == array[i] && i != j)
                     return true;
             }
         }
@@ -67,8 +67,29 @@ public class ArrayUtilities {
         return indice;
     }
 
-    public static int add(int[] array, int value) {
-        int [] array1 = [];
-        return array1
+    public static int[] add(int[] array, int value) {
+            int[] newArray = new int[array.length+1];
+        int x = 0;
+        for (int j = 0; j < array.length; j++) {
+                newArray[j] = array[j];
+        }
+        newArray[newArray.length-1] = value;
+        return newArray;
+    }
+
+    public static int[] remove(int[] array, int value) {
+        if (contains(array,value)){
+                int[] newArray = new int[array.length - 1];
+                int x = 0;
+                for (int j = 0; j < array.length; j++) {
+                    if (array[j] != value) {
+                        newArray[x] = array[j];
+                        x++;
+                    }
+                }
+                return newArray;
+        }
+        else
+            return array;
     }
 }
