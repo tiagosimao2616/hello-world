@@ -1,9 +1,9 @@
-public class Main {
+/*public class Main {
     /**
      *
      * @param args
      */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         float per = calculateRectanglePerimeter(5,10);
         System.out.println("Perimetro do retangulo é: " + per);
         float vol = calculateObjectVolume(5,10,20);
@@ -63,3 +63,4 @@ public class Main {
 
 }
 
+*/
